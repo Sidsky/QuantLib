@@ -25,13 +25,18 @@
 #include <ql/pricingengines/vanilla/analyticeuropeanengine.hpp>
 #include <ql/quotes/simplequote.hpp>
 #include <ql/time/daycounters/actual360.hpp>
+#include "TopLevelFixture.h"
 
 using namespace QuantLib;
-using namespace boost::unit_test_framework;
+using namespace boost::unit_test;
 
-void InstrumentTest::testObservable() {
+BOOST_FIXTURE_TEST_SUITE(Quantlibtest, TopLevelFixture)
 
-    BOOST_TEST_MESSAGE("Testing observability of instruments...");
+BOOST_AUTO_TEST_SUITE(InstrumentTest)
+
+BOOST_AUTO_TEST_CASE(testObservable) {
+
+    BOOST_TEST_MESSAGE("Auto Testing observability of instruments...");
 
     ext::shared_ptr<SimpleQuote> me1(new SimpleQuote(0.0));
     RelinkableHandle<Quote> h(me1);
@@ -39,12 +44,12 @@ void InstrumentTest::testObservable() {
 
     Flag f;
     f.registerWith(s);
-    
+
     s->NPV();
     me1->setValue(3.14);
     if (!f.isUp())
         BOOST_FAIL("Observer was not notified of instrument change");
-    
+
     s->NPV();
     f.lower();
     ext::shared_ptr<SimpleQuote> me2(new SimpleQuote(0.0));
@@ -64,17 +69,15 @@ void InstrumentTest::testObservable() {
         BOOST_FAIL("Observer was not notified of instrument change");
 }
 
-
-void InstrumentTest::testCompositeWhenShiftingDates() {
-
+BOOST_AUTO_TEST_CASE(testCompositeWhenShiftingDates) {
     BOOST_TEST_MESSAGE(
-        "Testing reaction of composite instrument to date changes...");
+        "Auto Testing reaction of composite instrument to date changes...");
 
     Date today = Date::todaysDate();
     DayCounter dc = Actual360();
 
     ext::shared_ptr<StrikedTypePayoff> payoff(
-                                 new PlainVanillaPayoff(Option::Call, 100.0));
+        new PlainVanillaPayoff(Option::Call, 100.0));
     ext::shared_ptr<Exercise> exercise(new EuropeanExercise(today+30));
 
     ext::shared_ptr<Instrument> option(new EuropeanOption(payoff, exercise));
@@ -111,11 +114,6 @@ void InstrumentTest::testCompositeWhenShiftingDates() {
         BOOST_FAIL("Composite didn't recalculate");
 }
 
-test_suite* InstrumentTest::suite() {
-    auto* suite = BOOST_TEST_SUITE("Instrument tests");
-    suite->add(QUANTLIB_TEST_CASE(&InstrumentTest::testObservable));
-    suite->add(QUANTLIB_TEST_CASE(
-                            &InstrumentTest::testCompositeWhenShiftingDates));
-    return suite;
-}
+BOOST_AUTO_TEST_SUITE_END()
 
+BOOST_AUTO_TEST_SUITE_END()
