@@ -17,7 +17,6 @@
  FOR A PARTICULAR PURPOSE.  See the license for more details.
 */
 
-#include "instruments.hpp"
 #include "utilities.hpp"
 #include <ql/instruments/stock.hpp>
 #include <ql/instruments/compositeinstrument.hpp>
