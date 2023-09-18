@@ -725,9 +725,6 @@
     <ClInclude Include="inflationvolatility.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="instruments.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="integrals.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
