@@ -1,7 +1,3 @@
-//
-// Created by Siddharth Mehrotra on 11/9/2023.
-//
-
 #ifndef QUANTLIB_TOPLEVELFIXTURE_HPP
 #define QUANTLIB_TOPLEVELFIXTURE_HPP
 

@@ -35,7 +35,7 @@ BOOST_AUTO_TEST_SUITE(InstrumentTest)
 
 BOOST_AUTO_TEST_CASE(testObservable) {
 
-    BOOST_TEST_MESSAGE("Auto Testing observability of instruments...");
+    BOOST_TEST_MESSAGE("Testing observability of instruments...");
 
     ext::shared_ptr<SimpleQuote> me1(new SimpleQuote(0.0));
     RelinkableHandle<Quote> h(me1);
@@ -70,7 +70,7 @@ BOOST_AUTO_TEST_CASE(testObservable) {
 
 BOOST_AUTO_TEST_CASE(testCompositeWhenShiftingDates) {
     BOOST_TEST_MESSAGE(
-        "Auto Testing reaction of composite instrument to date changes...");
+        "Testing reaction of composite instrument to date changes...");
 
     Date today = Date::todaysDate();
     DayCounter dc = Actual360();
