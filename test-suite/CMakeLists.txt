@@ -341,7 +341,7 @@ set(QL_TEST_HEADERS
     vpp.hpp
     zabr.hpp
     zerocouponswap.hpp
-        TopLevelFixture.h
+        toplevelfixture.hpp
 )
 
 set(QL_BENCHMARK_SOURCES

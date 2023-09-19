@@ -17,19 +17,19 @@
  FOR A PARTICULAR PURPOSE.  See the license for more details.
 */
 
+#include "toplevelfixture.hpp"
 #include "utilities.hpp"
-#include <ql/instruments/stock.hpp>
 #include <ql/instruments/compositeinstrument.hpp>
 #include <ql/instruments/europeanoption.hpp>
+#include <ql/instruments/stock.hpp>
 #include <ql/pricingengines/vanilla/analyticeuropeanengine.hpp>
 #include <ql/quotes/simplequote.hpp>
 #include <ql/time/daycounters/actual360.hpp>
-#include "TopLevelFixture.h"
 
 using namespace QuantLib;
 using namespace boost::unit_test;
 
-BOOST_FIXTURE_TEST_SUITE(Quantlibtest, TopLevelFixture)
+BOOST_FIXTURE_TEST_SUITE(Quantlibtest, toplevelfixture)
 
 BOOST_AUTO_TEST_SUITE(InstrumentTest)
 
