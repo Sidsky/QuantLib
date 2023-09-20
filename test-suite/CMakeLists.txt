@@ -257,7 +257,6 @@ set(QL_TEST_HEADERS
     inflationcpicapfloor.hpp
     inflationcpiswap.hpp
     inflationvolatility.hpp
-    instruments.hpp
     integrals.hpp
     interestrates.hpp
     interpolations.hpp

@@ -258,7 +258,6 @@ QL_TEST_HDRS = \
 	inflationcpicapfloor.hpp \
 	inflationcpiswap.hpp \
 	inflationvolatility.hpp \
-	instruments.hpp \
 	integrals.hpp \
 	interestrates.hpp \
 	interpolations.hpp \

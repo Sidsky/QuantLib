@@ -23,10 +23,6 @@
 #include <ql/utilities/dataparsers.hpp>
 #include <ql/version.hpp>
 
-//Boost.test
-#define BOOST_TEST_MODULE "QuantLibTest"
-#define BOOST_TEST_NO_MAIN
-#define BOOST_TEST_ALTERNATIVE_INIT_API
 #ifdef QL_ENABLE_PARALLEL_UNIT_TEST_RUNNER
 #include "paralleltestrunner.hpp"
 #else
