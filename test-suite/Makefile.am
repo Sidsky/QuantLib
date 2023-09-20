@@ -340,7 +340,8 @@ QL_TEST_HDRS = \
 	volatilitymodels.hpp \
 	vpp.hpp \
 	zabr.hpp \
-	zerocouponswap.hpp
+	zerocouponswap.hpp \
+	toplevelfixture.hpp
 
 QL_TESTS = ${QL_TEST_SRCS} ${QL_TEST_HDRS}
 

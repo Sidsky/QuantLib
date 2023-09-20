@@ -978,6 +978,7 @@
     <ClInclude Include="vpp.hpp" />
     <ClInclude Include="zabr.hpp" />
     <ClInclude Include="zerocouponswap.hpp" />
+    <ClInclude Include="toplevelfixture.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuantLib.vcxproj">
