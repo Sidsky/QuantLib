@@ -1,5 +1,6 @@
 #pragma once
 
+#include <boost/test/unit_test.hpp>
 #include <ql/indexes/indexmanager.hpp>
 #include <ql/settings.hpp>
 
@@ -10,14 +11,14 @@ namespace QuantLib {
 
     class TopLevelFixture {
       public:
-        TopLevelFixture() {
-            // Restore settings after each test.
-            SavedSettings restore;
-        }
+        // Restore settings after each test.
+        SavedSettings restore;
+
+        TopLevelFixture() {}
 
         ~TopLevelFixture() {
-            // Clear all fixings before running a test to avoid interference.
             IndexManager::instance().clearHistories();
+            BOOST_CHECK(true);
         }
 
 #if BOOST_VERSION <= 105300
