@@ -349,7 +349,7 @@ test_suite* init_unit_test_suite(int, char* []) {
     BOOST_TEST_MESSAGE(rule);
     BOOST_TEST_MESSAGE(header.str());
     BOOST_TEST_MESSAGE(rule);
-    auto* test = BOOST_TEST_SUITE("QuantLib test suite");
+    auto* test = BOOST_TEST_SUITE("QuantLibTest");
 
     test->add(QUANTLIB_TEST_CASE(startTimer));
 
