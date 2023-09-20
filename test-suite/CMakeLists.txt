@@ -257,6 +257,7 @@ set(QL_TEST_HEADERS
     inflationcpicapfloor.hpp
     inflationcpiswap.hpp
     inflationvolatility.hpp
+    instruments.hpp
     integrals.hpp
     interestrates.hpp
     interpolations.hpp
@@ -341,7 +342,7 @@ set(QL_TEST_HEADERS
     vpp.hpp
     zabr.hpp
     zerocouponswap.hpp
-        toplevelfixture.hpp
+    toplevelfixture.hpp
 )
 
 set(QL_BENCHMARK_SOURCES
