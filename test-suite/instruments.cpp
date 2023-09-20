@@ -29,7 +29,7 @@
 using namespace QuantLib;
 using namespace boost::unit_test;
 
-BOOST_FIXTURE_TEST_SUITE(Quantlibtest, toplevelfixture)
+BOOST_FIXTURE_TEST_SUITE(QuantLibTest, QuantLib::TopLevelFixture)
 
 BOOST_AUTO_TEST_SUITE(InstrumentTest)
 

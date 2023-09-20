@@ -1,22 +1,24 @@
-#ifndef QUANTLIB_TOPLEVELFIXTURE_HPP
-#define QUANTLIB_TOPLEVELFIXTURE_HPP
+#pragma once
 
-#include <boost/test/unit_test.hpp>
 #include <ql/indexes/indexmanager.hpp>
 #include <ql/settings.hpp>
 
 namespace QuantLib {
 
-    class toplevelfixture {
+    using QuantLib::SavedSettings;
+    using QuantLib::IndexManager;
+
+    class TopLevelFixture {
       public:
-        toplevelfixture() {
+        TopLevelFixture() {
             // Restore settings after each test.
             SavedSettings restore;
+        }
+
+        ~TopLevelFixture() {
             // Clear all fixings before running a test to avoid interference.
             IndexManager::instance().clearHistories();
         }
-
-        ~toplevelfixture() {}
 
 #if BOOST_VERSION <= 105300
         // defined to avoid unused-variable warnings. It doesn't
@@ -27,4 +29,3 @@ namespace QuantLib {
 #endif
     };
 }
-#endif // QUANTLIB_TOPLEVELFIXTURE_HPP
