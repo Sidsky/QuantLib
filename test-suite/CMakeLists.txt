@@ -168,6 +168,7 @@ set(QL_TEST_SOURCES
     vpp.cpp
     zabr.cpp
     zerocouponswap.cpp
+#    testsuite.cpp
 )
 
 set(QL_TEST_HEADERS

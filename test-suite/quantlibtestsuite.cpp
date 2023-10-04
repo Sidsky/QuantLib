@@ -214,29 +214,29 @@ using namespace boost::unit_test_framework;
 
 namespace {
 
-    decltype(std::chrono::steady_clock::now()) start;
+//    decltype(std::chrono::steady_clock::now()) start;
 
-    void startTimer() {
-        start = std::chrono::steady_clock::now();
-    }
-
-    void stopTimer() {
-        auto stop = std::chrono::steady_clock::now();
-
-        double seconds = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start).count() * 1e-3;
-        int hours = int(seconds/3600);
-        seconds -= hours * 3600;
-        int minutes = int(seconds/60);
-        seconds -= minutes * 60;
-
-        std::cout << "\nTests completed in ";
-        if (hours > 0)
-            std::cout << hours << " h ";
-        if (hours > 0 || minutes > 0)
-            std::cout << minutes << " m ";
-        std::cout << std::fixed << std::setprecision(0)
-                  << seconds << " s\n" << std::endl;
-    }
+//    void startTimer() {
+//        start = std::chrono::steady_clock::now();
+//    }
+//
+//    void stopTimer() {
+//        auto stop = std::chrono::steady_clock::now();
+//
+//        double seconds = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start).count() * 1e-3;
+//        int hours = int(seconds/3600);
+//        seconds -= hours * 3600;
+//        int minutes = int(seconds/60);
+//        seconds -= minutes * 60;
+//
+//        std::cout << "\nTests completed in ";
+//        if (hours > 0)
+//            std::cout << hours << " h ";
+//        if (hours > 0 || minutes > 0)
+//            std::cout << minutes << " m ";
+//        std::cout << std::fixed << std::setprecision(0)
+//                  << seconds << " s\n" << std::endl;
+//    }
 
     void configure(QuantLib::Date evaluationDate) {
         /* if needed, a subset of the lines below can be
@@ -351,7 +351,7 @@ test_suite* init_unit_test_suite(int, char* []) {
     BOOST_TEST_MESSAGE(rule);
     auto* test = BOOST_TEST_SUITE("QuantLib test suite");
 
-    test->add(QUANTLIB_TEST_CASE(startTimer));
+//    test->add(QUANTLIB_TEST_CASE(startTimer));
 
     test->add(AmericanOptionTest::suite(speed));
     test->add(AmortizingBondTest::suite());
@@ -531,7 +531,7 @@ test_suite* init_unit_test_suite(int, char* []) {
     test->add(LiborMarketModelTest::suite(speed));
     test->add(LiborMarketModelProcessTest::suite(speed));
 
-    test->add(QUANTLIB_TEST_CASE(stopTimer));
+//    test->add(QUANTLIB_TEST_CASE(stopTimer));
 
     return test;
 }
