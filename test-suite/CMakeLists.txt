@@ -126,6 +126,7 @@ set(QL_TEST_SOURCES
     period.cpp
     piecewiseyieldcurve.cpp
     piecewisezerospreadedtermstructure.cpp
+    quantlibglobalfixture.cpp
     quantlibtestsuite.cpp
     quantooption.cpp
     quotes.cpp
@@ -168,7 +169,6 @@ set(QL_TEST_SOURCES
     vpp.cpp
     zabr.cpp
     zerocouponswap.cpp
-#    testsuite.cpp
 )
 
 set(QL_TEST_HEADERS
@@ -299,6 +299,7 @@ set(QL_TEST_HEADERS
     period.hpp
     piecewiseyieldcurve.hpp
     piecewisezerospreadedtermstructure.hpp
+    quantlibglobalfixture.hpp
     quantooption.hpp
     quotes.hpp
     rangeaccrual.hpp

@@ -335,6 +335,9 @@
     <ClCompile Include="piecewisezerospreadedtermstructure.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="quantlibglobalfixture.cpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClCompile Include="quantooption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -840,6 +843,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="piecewisezerospreadedtermstructure.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quantlibglobalfixture.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="quantooption.hpp">

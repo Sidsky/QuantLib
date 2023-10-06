@@ -128,6 +128,7 @@ QL_TEST_SRCS = \
 	period.cpp \
 	piecewiseyieldcurve.cpp \
 	piecewisezerospreadedtermstructure.cpp \
+	quantlibglobalfixture.cpp \
 	quantooption.cpp \
 	quotes.cpp \
 	rangeaccrual.cpp \
@@ -298,6 +299,7 @@ QL_TEST_HDRS = \
 	period.hpp \
 	piecewiseyieldcurve.hpp \
 	piecewisezerospreadedtermstructure.hpp \
+	quantlibglobalfixture.hpp \
 	quantooption.hpp \
 	quotes.hpp \
 	rangeaccrual.hpp \
