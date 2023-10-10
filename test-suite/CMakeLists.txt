@@ -349,7 +349,7 @@ set(QL_TEST_HEADERS
 set(QL_BENCHMARK_SOURCES
     quantlibbenchmark.cpp
     
-    americanoption.cpp
+#    americanoption.cpp
     asianoptions.cpp                    asianoptions.hpp
     barrieroption.cpp                   barrieroption.hpp
     basketoption.cpp                    basketoption.hpp
