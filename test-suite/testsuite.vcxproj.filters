@@ -374,6 +374,9 @@
     <ClCompile Include="solvers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Included="speedlevel.cpp">
+        <Filter>Source Files</Filter>
+    </ClInclude>
     <ClCompile Include="spreadoption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -521,9 +524,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="americanoption.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="amortizingbond.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

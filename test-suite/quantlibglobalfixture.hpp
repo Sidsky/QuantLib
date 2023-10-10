@@ -6,10 +6,9 @@
 class QuantLibGlobalFixture {
   public:
     QuantLibGlobalFixture();
-    virtual ~QuantLibGlobalFixture();
-
-    static SpeedLevel & getInstance ();
-    SpeedLevel speed_level(int argc, char** argv);
+    ~QuantLibGlobalFixture();
+    static SpeedLevel get_speed ();
+    SpeedLevel speed_level (int argc, char **argv);
 
   private:
     static SpeedLevel speed;

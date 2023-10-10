@@ -20,11 +20,23 @@
 #ifndef quantlib_test_speed_level_hpp
 #define quantlib_test_speed_level_hpp
 
+#include <boost/test/unit_test.hpp>
+
 enum SpeedLevel {
     Slow   = 0,
     Fast   = 1,
     Faster = 2
 };
 
+namespace utf = boost::unit_test;
+namespace tt = boost::test_tools;
+
+struct if_speed {
+    SpeedLevel speed;
+
+    if_speed(SpeedLevel);
+
+    tt::assertion_result operator ()(utf::test_unit_id) const;
+};
 #endif
 

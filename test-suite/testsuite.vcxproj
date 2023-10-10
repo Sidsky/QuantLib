@@ -777,6 +777,7 @@
     <ClCompile Include="shortratemodels.cpp" />
     <ClCompile Include="sofrfutures.cpp" />
     <ClCompile Include="solvers.cpp" />
+    <ClCompile Include="speedlevel.cpp">
     <ClCompile Include="spreadoption.cpp" />
     <ClCompile Include="squarerootclvmodel.cpp" />
     <ClCompile Include="stats.cpp" />
@@ -808,7 +809,6 @@
     <ClCompile Include="quantlibtestsuite.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="americanoption.hpp" />
     <ClInclude Include="amortizingbond.hpp" />
     <ClInclude Include="andreasenhugevolatilityinterpl.hpp" />
     <ClInclude Include="array.hpp" />

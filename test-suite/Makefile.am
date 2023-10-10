@@ -142,6 +142,7 @@ QL_TEST_SRCS = \
 	shortratemodels.cpp \
 	sofrfutures.cpp \
 	solvers.cpp \
+	speedlevel.cpp \
 	spreadoption.cpp \
 	squarerootclvmodel.cpp \
 	stats.cpp \
@@ -173,7 +174,6 @@ QL_TEST_SRCS = \
 
 QL_TEST_HDRS = \
 	speedlevel.hpp \
-	americanoption.hpp \
 	amortizingbond.hpp \
 	andreasenhugevolatilityinterpl.hpp \
 	array.hpp \

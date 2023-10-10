@@ -37,7 +37,7 @@ QuantLibGlobalFixture::~QuantLibGlobalFixture(){
               << seconds << " s\n" << std::endl;
 }
 
-SpeedLevel & QuantLibGlobalFixture::getInstance() {
+SpeedLevel QuantLibGlobalFixture::get_speed() {
     return speed;
 }
 
