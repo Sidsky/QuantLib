@@ -348,7 +348,6 @@ QL_TESTS = ${QL_TEST_SRCS} ${QL_TEST_HDRS}
 
 QL_BENCHMARK_SRCS = \
 	quantlibbenchmark.cpp \
-	americanoption.cpp \
 	asianoptions.cpp \
 	barrieroption.cpp \
 	doublebarrieroption.cpp \
