@@ -371,7 +371,6 @@ QL_BENCHMARK_SRCS = \
 	utilities.cpp
 
 QL_BENCHMARK_HDRS = \
-	americanoption.hpp \
 	asianoptions.hpp \
 	barrieroption.hpp \
 	doublebarrieroption.hpp \
