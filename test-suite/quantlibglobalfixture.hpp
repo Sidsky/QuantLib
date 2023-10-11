@@ -2,6 +2,7 @@
 #define QUANTLIB_QUANTLIBGLOBALFIXTURE_HPP
 
 #include "speedlevel.hpp"
+#include <chrono>
 
 class QuantLibGlobalFixture {
   public:
