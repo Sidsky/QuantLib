@@ -31,7 +31,7 @@ enum SpeedLevel {
 struct if_speed {
     SpeedLevel speed;
 
-    if_speed(SpeedLevel);
+    if_speed(SpeedLevel speed);
 
     boost::test_tools::assertion_result operator ()(boost::unit_test::test_unit_id) const;
 };

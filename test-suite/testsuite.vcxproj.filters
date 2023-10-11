@@ -374,9 +374,9 @@
     <ClCompile Include="solvers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Included="speedlevel.cpp">
-        <Filter>Source Files</Filter>
-    </ClInclude>
+    <ClCompile Include="speedlevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="spreadoption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
