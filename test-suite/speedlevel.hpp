@@ -28,15 +28,12 @@ enum SpeedLevel {
     Faster = 2
 };
 
-namespace utf = boost::unit_test;
-namespace tt = boost::test_tools;
-
 struct if_speed {
     SpeedLevel speed;
 
     if_speed(SpeedLevel);
 
-    tt::assertion_result operator ()(utf::test_unit_id) const;
+    boost::test_tools::assertion_result operator ()(boost::unit_test::test_unit_id) const;
 };
 #endif
 
