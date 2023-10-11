@@ -477,7 +477,6 @@ test_suite* init_unit_test_suite(int, char* []) {
     test->add(UltimateForwardTermStructureTest::suite());
     test->add(VarianceSwapTest::suite());
     test->add(VolatilityModelsTest::suite());
-    test->add(Xoshiro256StarStarTest::suite());
     test->add(ZeroCouponSwapTest::suite());
 
     // tests for experimental classes
